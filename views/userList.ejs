@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul>
+      <% for(var i = 0 ;i < users.length ; i++) { %>
+          <a href="/user/destroy/<%= users[i].id %>">X</a>
+        <li><%= users[i].name %></li>
+      <% } %>
+    </ul>
+
+  </body>
+</html>
